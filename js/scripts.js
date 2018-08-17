@@ -5,16 +5,19 @@ var spaceOdysseyQuote = "I'm sorry, Dave. I'm afraid I can't do that."
 
 var convertNumbers = function(inputtedNumber) {
   var displayedArray = [];
+  var inputtedNumberString = inputtedNumber.toString();
 
   for (var i = 1; i <= inputtedNumber; i++) {
-    if (inputtedNumber === 333) {
+    if (inputtedNumberString.includes(0)) {
+      var displayMessage = beep;
+    } else {
       displayedArray.push(i);
+      var displayMessage = ("0, ".concat(displayedArray.toString()).split(",").join(", "));
     }
   }
 
-  var numberRange = ("0, ".concat(displayedArray.toString()).split(",").join(", "));
 
-  return numberRange;
+  return displayMessage;
 };
 
 // user interface logic
