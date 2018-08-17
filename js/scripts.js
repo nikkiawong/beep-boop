@@ -12,7 +12,9 @@ var convertNumbers = function(inputtedNumber) {
     }
   }
 
-  return displayedArray.toString();
+  var numberRange = ("0, ".concat(displayedArray.toString()).split(",").join(", "));
+
+  return numberRange;
 };
 
 // user interface logic
@@ -23,7 +25,7 @@ $(document).ready(function() {
 
     var outputtedMessage = convertNumbers(inputtedNumber);
     console.log(outputtedMessage);
-    // $("#text-here").text(outputtedMessage);
-    // $("#result").show();
+    $("#text-here").text(outputtedMessage);
+    $("#result").show();
   });
 });
