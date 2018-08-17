@@ -11,6 +11,9 @@ body {
 
 h1 {
   margin-bottom: 20px;
+  font-family: 'VT323', monospace;
+  color: #41e0e2;
+  font-size: 70px;
 }
 
 .bold {
@@ -26,12 +29,27 @@ h1 {
   color: #c61313;
 }
 
+#clickable:hover {
+  cursor: pointer;
+  color: white;
+}
+
 #halExplanation {
   display: none;
   text-align: center;
   font-size: 12px;
   margin: auto;
   width: 50%;
+}
+
+a {
+  color: #c61313;
+}
+
+a:hover {
+  text-decoration: none;
+  background-color: #c61313;
+  color: white;
 }
 
 img {
