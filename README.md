@@ -6,7 +6,7 @@
 
 ## Description
 
-This website allows users to input a number which will return either one of three preset messages or a range of numbers.
+This website allows users to input a number which will return either one of three preset messages or a range of numbers as well as enter their name to customize the messages.
 
 ### Specifications
 * Inputs that are not numbers trigger an alert saying "Please enter a valid number."
@@ -24,12 +24,15 @@ This website allows users to input a number which will return either one of thre
 * Numbers that contain a 1 are replaced (all digits) with "Boop!"
   * Example Input: 10
   * Example Output: "Boop!"
-* Numbers divisible by 7 are replaced with "Just what do you think you're doing, Dave?"
+* Numbers divisible by 7 are replaced with "Just what do you think you're doing, [Name]?"
   * Example Input: 14
-  * Example Output: "Just what do you think you're doing, Dave?"
-* Numbers divisible by 3 are replaced with "I'm sorry, Dave. I'm afraid I can't do that."
+  * Example Output: "Just what do you think you're doing, [Name]?"
+* Numbers divisible by 3 are replaced with "I'm sorry, [Name]. I'm afraid I can't do that."
   * Example Input: 30
-  * Example Output: "I'm sorry, Dave. I'm afraid I can't do that."
+  * Example Output: "I'm sorry, [Name]. I'm afraid I can't do that."
+* Numbers greater than 10,000 are replaced with "[Name], I really think I'm entitled to an answer to that question."
+  * Example Input: 10010
+  * Example Output: "[Name], I really think I'm entitled to an answer to that question."
 
 ## Setup
 

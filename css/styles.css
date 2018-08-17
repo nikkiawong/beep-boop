@@ -35,7 +35,7 @@ h1 {
 
 #clickable:hover {
   cursor: pointer;
-  color: white;
+  opacity: .8;
 }
 
 #halExplanation {
