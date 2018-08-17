@@ -8,7 +8,10 @@ var convertNumbers = function(inputtedNumber) {
   var inputtedNumberString = inputtedNumber.toString();
 
   for (var i = 1; i <= inputtedNumber; i++) {
-    if (inputtedNumberString.includes(0)) {
+    if (inputtedNumberString.includes(1)) {
+      var displayMessage = boop;
+    }
+    else if (inputtedNumberString.includes(0)) {
       var displayMessage = beep;
     } else {
       displayedArray.push(i);
@@ -27,7 +30,6 @@ $(document).ready(function() {
     var inputtedNumber = parseInt($("input#userInput").val());
 
     var outputtedMessage = convertNumbers(inputtedNumber);
-    console.log(outputtedMessage);
     $("#text-here").text(outputtedMessage);
     $("#result").show();
   });
