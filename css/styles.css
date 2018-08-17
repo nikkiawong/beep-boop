@@ -16,8 +16,9 @@ h1 {
 img {
   display: block;
   margin-left: auto;
+  margin-bottom: 20px;
   margin-right: auto;
-  width: 50%;
+  width: 25%;
 }
 
 label {

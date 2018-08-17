@@ -1,7 +1,7 @@
 var beep = "Beep!";
 var boop = "Boop!";
-var weeoop = "Weeoop!";
 var spaceOdysseyQuote = "I'm sorry, Dave. I'm afraid I can't do that.";
+var spaceOdysseyQuestion = "Just what do you think you're doing, Dave?";
 var errorMessage = "Please enter a valid number.";
 
 var convertNumbers = function(inputtedNumber) {
@@ -16,7 +16,7 @@ var convertNumbers = function(inputtedNumber) {
     if (inputtedNumber % 3 === 0 && inputtedNumber != 0) {
       var displayMessage = spaceOdysseyQuote;
     } else if (inputtedNumber % 7 === 0 && inputtedNumber != 0) {
-      var displayMessage = weeoop;
+      var displayMessage = spaceOdysseyQuestion;
     } else if (inputtedNumberString.includes(1)) {
       var displayMessage = boop;
     } else if (inputtedNumberString.includes(0)) {
