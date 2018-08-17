@@ -22,9 +22,9 @@ var convertNumbers = function(inputtedNumber) {
       displayedArray.push(i);
       var displayMessage = (displayedArray.toString()).split(",").join(", ");
     }
-
-    return displayMessage;
   }
+
+  return displayMessage;
 };
 
 $(document).ready(function() {
