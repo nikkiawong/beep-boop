@@ -21,6 +21,9 @@ var convertNumbers = function(inputtedNumber) {
       var displayMessage = boop;
     } else if (inputtedNumberString.includes(0)) {
       var displayMessage = beep;
+    } else if (inputtedNumberString.includes(8)) {
+      displayedArray.push(i);
+      var displayMessage = (displayedArray.toString()).split(",").reverse().join(", ");
     } else {
       displayedArray.push(i);
       var displayMessage = (displayedArray.toString()).split(",").join(", ");
