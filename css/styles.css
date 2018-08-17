@@ -5,6 +5,10 @@ body {
   font-family: 'Source Code Pro', monospace;
 }
 
+body:hover {
+  cursor: default;
+}
+
 .container {
   margin-top: 50px;
 }
