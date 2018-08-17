@@ -6,8 +6,8 @@ var convertNumbers = function(inputtedNumber) {
   var displayedArray = [];
   var inputtedNumberString = inputtedNumber.toString();
 
-  for (var i = 1; i <= inputtedNumber; i++) {
-    if (inputtedNumber % 3 === 0) {
+  for (var i = 0; i <= inputtedNumber; i++) {
+    if (inputtedNumber % 3 === 0 && inputtedNumber != 0) {
       var displayMessage = spaceOdysseyQuote;
     } else if (inputtedNumberString.includes(1)) {
       var displayMessage = boop;
@@ -15,7 +15,7 @@ var convertNumbers = function(inputtedNumber) {
       var displayMessage = beep;
     } else {
       displayedArray.push(i);
-      var displayMessage = ("0, ".concat(displayedArray.toString()).split(",").join(", "));
+      var displayMessage = (displayedArray.toString()).split(",").join(", ");
     }
   }
 
