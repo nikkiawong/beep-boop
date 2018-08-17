@@ -42,4 +42,8 @@ $(document).ready(function() {
     $("#messageToUser").text(outputtedMessage);
     $("#result").show();
   });
+
+  $("#clickable").click(function() {
+    $("#halExplanation").slideToggle();
+  });
 });

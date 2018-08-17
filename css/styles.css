@@ -13,8 +13,30 @@ h1 {
   margin-bottom: 20px;
 }
 
+.bold {
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.italic {
+  font-style: italic;
+}
+
+#clickable {
+  color: #c61313;
+}
+
+#halExplanation {
+  display: none;
+  text-align: center;
+  font-size: 12px;
+  margin: auto;
+  width: 50%;
+}
+
 img {
   display: block;
+  margin-top: 30px;
   margin-left: auto;
   margin-bottom: 20px;
   margin-right: auto;
