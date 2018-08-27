@@ -24,8 +24,10 @@ var convertNumbers = function(inputtedNumber) {
       console.log(displayedArray);
       var displayedArrayString = displayedArray.toString();
       console.log(displayedArrayString);
+
       if (displayedArrayString.includes(0)) {
         var result = displayedArray.splice(displayedArray.indexOf(0), 1, beep);
+        displayedArray.splice(displayedArray.indexOf(1), 1, boop);
       }
 
       var displayMessage = displayedArrayString.split(",").join(", ");
