@@ -15,15 +15,12 @@ This website allows users to input a number which will return either one of thre
 * All numbers return a range of numbers from 0 to the chosen number
   * Example Input: 5
   * Example Output: 0, 1, 2, 3, 4, 5
-* Numbers that contain an 8 return a range of numbers from the chosen number to 0
-  * Example Input: 8
-  * Example Output: 8, 7, 6, 5, 4, 3, 2, 1, 0
 * Numbers that contain a 0 are replaced (all digits) with "Beep!"
   * Example Input: 0
   * Example Output: "Beep!"
 * Numbers that contain a 1 are replaced (all digits) with "Boop!"
-  * Example Input: 10
-  * Example Output: "Boop!"
+  * Example Input: 22
+  * Example Output: Beep!, Boop!, 2, 3, 4, 5, 6, 7, 8, 9, Beep!, Boop!, Boop!, Boop!, Boop!, Boop!, Boop!, Boop!, Boop!, Boop!, Beep!, Boop!, 22
 * Numbers divisible by 7 are replaced with "Just what do you think you're doing, [Name]?"
   * Example Input: 14
   * Example Output: "Just what do you think you're doing, [Name]?"

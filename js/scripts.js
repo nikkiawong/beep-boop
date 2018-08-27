@@ -19,15 +19,16 @@ var convertNumbers = function(inputtedNumber) {
       var displayMessage = "I'm sorry, " + inputtedName + ". I'm afraid I can't do that.";
     } else if (inputtedNumber % 7 === 0 && inputtedNumber != 0) {
       var displayMessage = "Just what do you think you're doing, " + inputtedName + "?";
+    } else if (inputtedNumber === 0) {
+      var displayMessage = beep;
+    } else if (inputtedNumber === 1) {
+      var displayMessage = boop;
     } else {
       displayedArray.push(i);
-      console.log(displayedArray);
       var displayedArrayString = displayedArray.toString();
-      console.log(displayedArrayString);
 
       if (displayedArrayString.includes(0)) {
-        var result = displayedArray.splice(displayedArray.indexOf(0), 1, beep);
-        // var result1 = displayedArray.splice(displayedArray.indexOf(1), 1, boop);
+        displayedArray.splice(displayedArray.indexOf(0), 1, beep);
       } else if (displayedArrayString.includes(1)) {
         displayedArray.splice(displayedArray.indexOf(1), 1, boop);
       }
