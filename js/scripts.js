@@ -25,7 +25,7 @@ var convertNumbers = function(inputtedNumber) {
       var displayedArrayString = displayedArray.toString();
       console.log(displayedArrayString);
       if (displayedArrayString.includes(0)) {
-        var result = displayedArray.splice(0, 11, "Beep!");
+        var result = displayedArray.splice(displayedArray.indexOf(0), 1, beep);
       }
 
       var displayMessage = displayedArrayString;
