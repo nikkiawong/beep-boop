@@ -27,6 +27,8 @@ var convertNumbers = function(inputtedNumber) {
 
       if (displayedArrayString.includes(0)) {
         var result = displayedArray.splice(displayedArray.indexOf(0), 1, beep);
+        // var result1 = displayedArray.splice(displayedArray.indexOf(1), 1, boop);
+      } else if (displayedArrayString.includes(1)) {
         displayedArray.splice(displayedArray.indexOf(1), 1, boop);
       }
 
