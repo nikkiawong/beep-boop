@@ -15,32 +15,25 @@ var convertNumbers = function(inputtedNumber) {
   for (var i = 0; i <= inputtedNumber; i++) {
     if (inputtedNumber > 10000) {
       var displayMessage = inputtedName + ", I really think I'm entitled to an answer to that question."
+      return displayMessage;
     } else if (inputtedNumber % 3 === 0 && inputtedNumber != 0) {
       var displayMessage = "I'm sorry, " + inputtedName + ". I'm afraid I can't do that.";
+      return displayMessage;
     } else if (inputtedNumber % 7 === 0 && inputtedNumber != 0) {
       var displayMessage = "Just what do you think you're doing, " + inputtedName + "?";
+      return displayMessage;
     } else {
       displayedArray.push(i);
       console.log(displayedArray);
-      var displayMessage = displayedArray;
+      var displayedArrayString = displayedArray.toString();
+      console.log(displayedArrayString);
+      if (displayedArrayString.includes(0)) {
+        displayedArray.splice(0, displayedArray.length, 'Beep!');
+        console.log(displayedArray);
+      }
     }
   }
-//
-//   if (index !== -1) {
-//     items[index] = 1010;
-// }
-  return displayMessage;
 };
-
-// var replaceNumbers = function(displayedArray) {
-//   var indexOfZero = displayedArray.indexOf(0);
-//   for (var i = 0; i <= displayedArray.length; i++) {
-//     var result = displayedArray.push("Beep!");
-//     }
-//
-//   console.log(result);
-//   return result;
-// };
 
 $(document).ready(function() {
   $("form#input-form").submit(function(event) {
