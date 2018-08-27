@@ -28,7 +28,7 @@ var convertNumbers = function(inputtedNumber) {
         var result = displayedArray.splice(displayedArray.indexOf(0), 1, beep);
       }
 
-      var displayMessage = displayedArrayString;
+      var displayMessage = displayedArrayString.split(",").join(", ");
     }
   }
 
