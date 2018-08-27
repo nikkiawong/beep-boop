@@ -5,7 +5,6 @@ var inputtedName;
 var displayedArray = [];
 
 var convertNumbers = function(inputtedNumber) {
-  // var zero = displayedArray.indexOf(0);
   var inputtedNumberString = inputtedNumber.toString();
 
   if (inputtedNumberString.includes(NaN)) {
