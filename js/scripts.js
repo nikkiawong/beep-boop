@@ -2,9 +2,10 @@ var beep = "Beep!";
 var boop = "Boop!";
 var errorMessage = "Please enter a valid number.";
 var inputtedName;
+var displayedArray = [];
 
 var convertNumbers = function(inputtedNumber) {
-  var displayedArray = [];
+  // var zero = displayedArray.indexOf(0);
   var inputtedNumberString = inputtedNumber.toString();
 
   if (inputtedNumberString.includes(NaN)) {
@@ -18,21 +19,28 @@ var convertNumbers = function(inputtedNumber) {
       var displayMessage = "I'm sorry, " + inputtedName + ". I'm afraid I can't do that.";
     } else if (inputtedNumber % 7 === 0 && inputtedNumber != 0) {
       var displayMessage = "Just what do you think you're doing, " + inputtedName + "?";
-    } else if (inputtedNumberString.includes(1)) {
-      var displayMessage = boop;
-    } else if (inputtedNumberString.includes(0)) {
-      var displayMessage = beep;
-    } else if (inputtedNumberString.includes(8)) {
-      displayedArray.push(i);
-      var displayMessage = (displayedArray.toString()).split(",").reverse().join(", ");
     } else {
       displayedArray.push(i);
-      var displayMessage = (displayedArray.toString()).split(",").join(", ");
+      console.log(displayedArray);
+      var displayMessage = displayedArray;
     }
   }
-
+//
+//   if (index !== -1) {
+//     items[index] = 1010;
+// }
   return displayMessage;
 };
+
+// var replaceNumbers = function(displayedArray) {
+//   var indexOfZero = displayedArray.indexOf(0);
+//   for (var i = 0; i <= displayedArray.length; i++) {
+//     var result = displayedArray.push("Beep!");
+//     }
+//
+//   console.log(result);
+//   return result;
+// };
 
 $(document).ready(function() {
   $("form#input-form").submit(function(event) {
@@ -41,6 +49,7 @@ $(document).ready(function() {
     var inputtedNumber = parseInt($("input#userInput").val());
 
     var outputtedMessage = convertNumbers(inputtedNumber);
+    // replaceNumbers(displayedArray);
     $("#messageToUser").text(outputtedMessage);
     $("#result").show();
   });
