@@ -43,11 +43,11 @@ var convertNumbers = function(inputtedNumber) {
 $(document).ready(function() {
   $("form#input-form").submit(function(event) {
     event.preventDefault();
+    $("#submitButton").hide();
     inputtedName = $("input#nameInput").val();
     var inputtedNumber = parseInt($("input#userInput").val());
 
     var outputtedMessage = convertNumbers(inputtedNumber);
-    // replaceNumbers(displayedArray);
     $("#messageToUser").text(outputtedMessage);
     $("#result").show();
   });
